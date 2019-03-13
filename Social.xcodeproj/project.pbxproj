@@ -11,9 +11,10 @@
 		2B0D4D672237CC6A0099729C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D4D662237CC6A0099729C /* LoginVC.swift */; };
 		2B0D4D692237CD0C0099729C /* InsertTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D4D682237CD0C0099729C /* InsertTextField.swift */; };
 		2B0D4D6B2237D9700099729C /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D4D6A2237D9700099729C /* ShadowView.swift */; };
+		2B0D4D6D2237DFD40099729C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D4D6C2237DFD40099729C /* AuthService.swift */; };
 		2B4A1A2D223796E3009DD559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A1A2C223796E3009DD559 /* AppDelegate.swift */; };
-		2B4A1A2F223796E3009DD559 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A1A2E223796E3009DD559 /* FirstViewController.swift */; };
-		2B4A1A31223796E3009DD559 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A1A30223796E3009DD559 /* SecondViewController.swift */; };
+		2B4A1A2F223796E3009DD559 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A1A2E223796E3009DD559 /* FeedVC.swift */; };
+		2B4A1A31223796E3009DD559 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A1A30223796E3009DD559 /* GroupsVC.swift */; };
 		2B4A1A34223796E3009DD559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4A1A32223796E3009DD559 /* Main.storyboard */; };
 		2B4A1A36223796E4009DD559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4A1A35223796E4009DD559 /* Assets.xcassets */; };
 		2B4A1A39223796E4009DD559 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4A1A37223796E4009DD559 /* LaunchScreen.storyboard */; };
@@ -28,10 +29,11 @@
 		2B0D4D662237CC6A0099729C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		2B0D4D682237CD0C0099729C /* InsertTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertTextField.swift; sourceTree = "<group>"; };
 		2B0D4D6A2237D9700099729C /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		2B0D4D6C2237DFD40099729C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		2B4A1A29223796E3009DD559 /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4A1A2C223796E3009DD559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B4A1A2E223796E3009DD559 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		2B4A1A30223796E3009DD559 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2B4A1A2E223796E3009DD559 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		2B4A1A30223796E3009DD559 /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		2B4A1A33223796E3009DD559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B4A1A35223796E4009DD559 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B4A1A38223796E4009DD559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,8 +95,8 @@
 		2B4A1A40223796EF009DD559 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2B4A1A30223796E3009DD559 /* SecondViewController.swift */,
-				2B4A1A2E223796E3009DD559 /* FirstViewController.swift */,
+				2B4A1A30223796E3009DD559 /* GroupsVC.swift */,
+				2B4A1A2E223796E3009DD559 /* FeedVC.swift */,
 				2B0D4D642237CBE00099729C /* AuthVC.swift */,
 				2B0D4D662237CC6A0099729C /* LoginVC.swift */,
 			);
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				2BE176A42237A13A008944A3 /* DataService.swift */,
+				2B0D4D6C2237DFD40099729C /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -278,11 +281,12 @@
 			files = (
 				2B0D4D692237CD0C0099729C /* InsertTextField.swift in Sources */,
 				2B0D4D652237CBE00099729C /* AuthVC.swift in Sources */,
-				2B4A1A31223796E3009DD559 /* SecondViewController.swift in Sources */,
+				2B4A1A31223796E3009DD559 /* GroupsVC.swift in Sources */,
+				2B0D4D6D2237DFD40099729C /* AuthService.swift in Sources */,
 				2B0D4D672237CC6A0099729C /* LoginVC.swift in Sources */,
 				2B0D4D6B2237D9700099729C /* ShadowView.swift in Sources */,
 				2B4A1A2D223796E3009DD559 /* AppDelegate.swift in Sources */,
-				2B4A1A2F223796E3009DD559 /* FirstViewController.swift in Sources */,
+				2B4A1A2F223796E3009DD559 /* FeedVC.swift in Sources */,
 				2BE176A52237A13A008944A3 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
