@@ -34,10 +34,10 @@ class DataService {
     var REF_FEED: DatabaseReference {
         return _REF_FEED
     }
-//    func createDBUser(uid: String , userData: Dictionary<String, Any>) {
-//        REF_USERS.child(uid).updateChildValues(userData)
-//
-//    }
+    func createDBUser(uid: String , userData: Dictionary<String, Any>) {
+        REF_USERS.child(uid).updateChildValues(userData)
+
+    }
     
 }
 
