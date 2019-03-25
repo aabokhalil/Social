@@ -55,13 +55,53 @@
                                 <rect key="frame" x="0.0" y="70" width="375" height="548"/>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="K2T-DM-hIK">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedCell" rowHeight="100" id="K2T-DM-hIK" customClass="FeedCell" customModule="Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K2T-DM-hIK" id="J5A-U2-yz7">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="Snb-jo-Lg4">
+                                                    <rect key="frame" x="15" y="21" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="Aic-Ug-Hlo"/>
+                                                        <constraint firstAttribute="height" constant="50" id="n5h-tG-R5J"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="b6W-jy-Fhb">
+                                                    <rect key="frame" x="75" y="21" width="275" height="58"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@social.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kQ-fy-KFF">
+                                                            <rect key="frame" x="0.0" y="0.0" width="275" height="25"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                                            <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="hDJ-cT-1IF">
+                                                            <rect key="frame" x="0.0" y="33" width="275" height="25"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                                            <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Snb-jo-Lg4" firstAttribute="top" secondItem="J5A-U2-yz7" secondAttribute="topMargin" constant="10" id="FFS-0w-lbL"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="b6W-jy-Fhb" secondAttribute="trailing" constant="10" id="JwV-Xl-iZn"/>
+                                                <constraint firstItem="b6W-jy-Fhb" firstAttribute="leading" secondItem="Snb-jo-Lg4" secondAttribute="trailing" constant="10" id="Pwe-L7-6Fj"/>
+                                                <constraint firstItem="b6W-jy-Fhb" firstAttribute="top" secondItem="J5A-U2-yz7" secondAttribute="topMargin" constant="10" id="XOO-cJ-Fom"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="b6W-jy-Fhb" secondAttribute="bottom" constant="10" id="jZw-gs-5T6"/>
+                                                <constraint firstItem="Snb-jo-Lg4" firstAttribute="leading" secondItem="J5A-U2-yz7" secondAttribute="leadingMargin" id="oe4-pq-Rm1"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.16078431372549018" green="0.16862745098039217" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="contentLabel" destination="hDJ-cT-1IF" id="nx6-7G-WCq"/>
+                                            <outlet property="emailLabel" destination="2kQ-fy-KFF" id="AIv-od-6kj"/>
+                                            <outlet property="profileImage" destination="Snb-jo-Lg4" id="sUP-3i-T8r"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -79,10 +119,13 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="feed-tabIcon" selectedImage="feed-tabIcon" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="tableView" destination="c3g-Qa-02Z" id="jQo-lV-Kok"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4557.6000000000004" y="-315.29235382308849"/>
+            <point key="canvasLocation" x="4558" y="-852"/>
         </scene>
         <!--Me-->
         <scene sceneID="P4E-zr-YpN">
@@ -196,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddV-xZ-yoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5438" y="15"/>
+            <point key="canvasLocation" x="4558" y="15"/>
         </scene>
         <!--Create PostVC-->
         <scene sceneID="Be7-ig-cZF">
@@ -240,7 +283,7 @@
                                     <constraint firstItem="PEC-Nv-qVu" firstAttribute="leading" secondItem="pZn-Zn-b95" secondAttribute="leading" constant="20" id="vhD-zb-CxV"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JWg-0K-CEN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="JWg-0K-CEN">
                                 <rect key="frame" x="16" y="90" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="GoT-Eh-utQ"/>
@@ -309,7 +352,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpF-AK-gn0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6006" y="-646"/>
+            <point key="canvasLocation" x="6026" y="-852"/>
         </scene>
         <!--Groups-->
         <scene sceneID="wg7-f3-ORb">
@@ -382,7 +425,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4546" y="366"/>
+            <point key="canvasLocation" x="4558" y="959"/>
         </scene>
         <!--AuthVC-->
         <scene sceneID="XGi-eM-eJt">
@@ -492,7 +535,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RpW-Zz-afF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1834" y="154"/>
+            <point key="canvasLocation" x="1887" y="15"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="Hxd-mU-KAs">
@@ -577,7 +620,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cus-L7-qmK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2624.8000000000002" y="152.47376311844079"/>
+            <point key="canvasLocation" x="2772" y="15"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -599,7 +642,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3730" y="-5"/>
+            <point key="canvasLocation" x="3676" y="15"/>
         </scene>
     </scenes>
     <resources>

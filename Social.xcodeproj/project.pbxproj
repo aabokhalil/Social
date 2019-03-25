@@ -20,6 +20,9 @@
 		2B4A1A39223796E4009DD559 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4A1A37223796E4009DD559 /* LaunchScreen.storyboard */; };
 		2B605902224894E000D9FD9D /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B605901224894E000D9FD9D /* MeVC.swift */; };
 		2B6059042248A8AF00D9FD9D /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6059032248A8AF00D9FD9D /* CreatePostVC.swift */; };
+		2B6059062248FDF000D9FD9D /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6059052248FDF000D9FD9D /* UIViewExt.swift */; };
+		2B6059082249042F00D9FD9D /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6059072249042F00D9FD9D /* FeedCell.swift */; };
+		2B60590A2249083D00D9FD9D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6059092249083D00D9FD9D /* Message.swift */; };
 		2BE176A32237A000008944A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BE176A22237A000008944A3 /* GoogleService-Info.plist */; };
 		2BE176A52237A13A008944A3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE176A42237A13A008944A3 /* DataService.swift */; };
 		89A3A38481F195169F252950 /* Pods_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136D9FAEFD925D7536DDB97E /* Pods_Social.framework */; };
@@ -42,6 +45,9 @@
 		2B4A1A3A223796E4009DD559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B605901224894E000D9FD9D /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		2B6059032248A8AF00D9FD9D /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
+		2B6059052248FDF000D9FD9D /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		2B6059072249042F00D9FD9D /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		2B6059092249083D00D9FD9D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		2BE176A22237A000008944A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2BE176A42237A13A008944A3 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		4012DD02312661BE1731F318 /* Pods-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social.debug.xcconfig"; path = "Target Support Files/Pods-Social/Pods-Social.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 			children = (
 				2B0D4D682237CD0C0099729C /* InsertTextField.swift */,
 				2B0D4D6A2237D9700099729C /* ShadowView.swift */,
+				2B6059072249042F00D9FD9D /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,6 +128,7 @@
 		2B4A1A4222379707009DD559 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2B6059092249083D00D9FD9D /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,6 +136,7 @@
 		2B4A1A432237970E009DD559 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2B6059052248FDF000D9FD9D /* UIViewExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -285,6 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B6059062248FDF000D9FD9D /* UIViewExt.swift in Sources */,
+				2B6059082249042F00D9FD9D /* FeedCell.swift in Sources */,
 				2B605902224894E000D9FD9D /* MeVC.swift in Sources */,
 				2B0D4D692237CD0C0099729C /* InsertTextField.swift in Sources */,
 				2B0D4D652237CBE00099729C /* AuthVC.swift in Sources */,
@@ -296,6 +307,7 @@
 				2B4A1A2D223796E3009DD559 /* AppDelegate.swift in Sources */,
 				2B4A1A2F223796E3009DD559 /* FeedVC.swift in Sources */,
 				2BE176A52237A13A008944A3 /* DataService.swift in Sources */,
+				2B60590A2249083D00D9FD9D /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,6 +20,8 @@ class CreatePostVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.delegate = self
+        sendButton.bindToKeyboard()
+        //profileImage.bindToKeyboard()
 
         // Do any additional setup after loading the view.
     }
