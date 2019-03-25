@@ -19,6 +19,7 @@
 		2B4A1A36223796E4009DD559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4A1A35223796E4009DD559 /* Assets.xcassets */; };
 		2B4A1A39223796E4009DD559 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4A1A37223796E4009DD559 /* LaunchScreen.storyboard */; };
 		2B605902224894E000D9FD9D /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B605901224894E000D9FD9D /* MeVC.swift */; };
+		2B6059042248A8AF00D9FD9D /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6059032248A8AF00D9FD9D /* CreatePostVC.swift */; };
 		2BE176A32237A000008944A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BE176A22237A000008944A3 /* GoogleService-Info.plist */; };
 		2BE176A52237A13A008944A3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE176A42237A13A008944A3 /* DataService.swift */; };
 		89A3A38481F195169F252950 /* Pods_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136D9FAEFD925D7536DDB97E /* Pods_Social.framework */; };
@@ -40,6 +41,7 @@
 		2B4A1A38223796E4009DD559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B4A1A3A223796E4009DD559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B605901224894E000D9FD9D /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
+		2B6059032248A8AF00D9FD9D /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		2BE176A22237A000008944A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2BE176A42237A13A008944A3 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		4012DD02312661BE1731F318 /* Pods-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social.debug.xcconfig"; path = "Target Support Files/Pods-Social/Pods-Social.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				2B0D4D642237CBE00099729C /* AuthVC.swift */,
 				2B0D4D662237CC6A0099729C /* LoginVC.swift */,
 				2B605901224894E000D9FD9D /* MeVC.swift */,
+				2B6059032248A8AF00D9FD9D /* CreatePostVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				2B0D4D6D2237DFD40099729C /* AuthService.swift in Sources */,
 				2B0D4D672237CC6A0099729C /* LoginVC.swift in Sources */,
 				2B0D4D6B2237D9700099729C /* ShadowView.swift in Sources */,
+				2B6059042248A8AF00D9FD9D /* CreatePostVC.swift in Sources */,
 				2B4A1A2D223796E3009DD559 /* AppDelegate.swift in Sources */,
 				2B4A1A2F223796E3009DD559 /* FeedVC.swift in Sources */,
 				2BE176A52237A13A008944A3 /* DataService.swift in Sources */,
