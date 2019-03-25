@@ -15,8 +15,8 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        emailField.delegate = self
-        passwordField.delegate = self
+//        emailField.delegate = self
+//        passwordField.delegate = self
 
     }
 
@@ -49,6 +49,6 @@ class LoginVC: UIViewController {
 
     }
 }
-extension LoginVC : UITextFieldDelegate {
-    
-}
+//extension LoginVC : UITextFieldDelegate {
+//
+//}
