@@ -12,6 +12,8 @@
 		2B0D4D692237CD0C0099729C /* InsertTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D4D682237CD0C0099729C /* InsertTextField.swift */; };
 		2B0D4D6B2237D9700099729C /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D4D6A2237D9700099729C /* ShadowView.swift */; };
 		2B0D4D6D2237DFD40099729C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D4D6C2237DFD40099729C /* AuthService.swift */; };
+		2B18056A224A2E3B00D06E52 /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B180569224A2E3B00D06E52 /* CreateGroupsVC.swift */; };
+		2B18056C224A40E800D06E52 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B18056B224A40E800D06E52 /* UserCell.swift */; };
 		2B4A1A2D223796E3009DD559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A1A2C223796E3009DD559 /* AppDelegate.swift */; };
 		2B4A1A2F223796E3009DD559 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A1A2E223796E3009DD559 /* FeedVC.swift */; };
 		2B4A1A31223796E3009DD559 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A1A30223796E3009DD559 /* GroupsVC.swift */; };
@@ -35,6 +37,8 @@
 		2B0D4D682237CD0C0099729C /* InsertTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertTextField.swift; sourceTree = "<group>"; };
 		2B0D4D6A2237D9700099729C /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		2B0D4D6C2237DFD40099729C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		2B180569224A2E3B00D06E52 /* CreateGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
+		2B18056B224A40E800D06E52 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		2B4A1A29223796E3009DD559 /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4A1A2C223796E3009DD559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B4A1A2E223796E3009DD559 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 				2B0D4D662237CC6A0099729C /* LoginVC.swift */,
 				2B605901224894E000D9FD9D /* MeVC.swift */,
 				2B6059032248A8AF00D9FD9D /* CreatePostVC.swift */,
+				2B180569224A2E3B00D06E52 /* CreateGroupsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 				2B0D4D682237CD0C0099729C /* InsertTextField.swift */,
 				2B0D4D6A2237D9700099729C /* ShadowView.swift */,
 				2B6059072249042F00D9FD9D /* FeedCell.swift */,
+				2B18056B224A40E800D06E52 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,9 +308,11 @@
 				2B4A1A31223796E3009DD559 /* GroupsVC.swift in Sources */,
 				2B0D4D6D2237DFD40099729C /* AuthService.swift in Sources */,
 				2B0D4D672237CC6A0099729C /* LoginVC.swift in Sources */,
+				2B18056C224A40E800D06E52 /* UserCell.swift in Sources */,
 				2B0D4D6B2237D9700099729C /* ShadowView.swift in Sources */,
 				2B6059042248A8AF00D9FD9D /* CreatePostVC.swift in Sources */,
 				2B4A1A2D223796E3009DD559 /* AppDelegate.swift in Sources */,
+				2B18056A224A2E3B00D06E52 /* CreateGroupsVC.swift in Sources */,
 				2B4A1A2F223796E3009DD559 /* FeedVC.swift in Sources */,
 				2BE176A52237A13A008944A3 /* DataService.swift in Sources */,
 				2B60590A2249083D00D9FD9D /* Message.swift in Sources */,

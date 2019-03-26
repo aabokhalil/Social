@@ -25,6 +25,11 @@ class CreatePostVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.emailLabel.text = Auth.auth().currentUser?.email
+    }
 
     @IBAction func sendButtonWasPressed(_ sender: Any) {
         if textView.text != nil && textView.text != "Say something here ..." {
