@@ -523,7 +523,7 @@
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add people to your group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81I-xa-uml">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add people to your group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="81I-xa-uml">
                                         <rect key="frame" x="0.0" y="128" width="345" height="20"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
                                         <color key="textColor" red="0.4862062931060791" green="0.65538924932479858" blue="0.29733097553253174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -611,7 +611,7 @@
                         <outlet property="descriptionTextField" destination="lFM-6U-aKs" id="o3u-LB-geb"/>
                         <outlet property="doneBtn" destination="NIN-AR-Yx6" id="zmb-ny-mLA"/>
                         <outlet property="emailSearchTextField" destination="QNB-rZ-3Ba" id="d0o-cC-Pua"/>
-                        <outlet property="groupMemberLbl" destination="81I-xa-uml" id="FN9-Ms-WUm"/>
+                        <outlet property="groupMemberLbl" destination="81I-xa-uml" id="aJI-rW-HtJ"/>
                         <outlet property="tableView" destination="mE4-F9-ll2" id="RUc-5S-LyV"/>
                         <outlet property="titleTextField" destination="Szz-KR-9BE" id="jcb-pG-yKy"/>
                     </connections>
