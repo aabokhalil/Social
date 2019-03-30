@@ -18,8 +18,8 @@ class AuthService {
             
             if Auth.auth().currentUser != nil {
                 let user = Auth.auth().currentUser
-                print("emailemailemailemailemailemailemailemailemailemailemailemailemailemailemailemailemailemailemailemailemailemailemailemail")
-                print(user?.email)
+                print("emailemailemail")
+                print(user?.email as Any)
             let userData = ["provider": user!.providerID, "email": user!.email]
             DataService.instance.createDBUser(uid: user!.uid, userData: userData as Dictionary<String, Any>)
             print(user?.providerID as Any)
